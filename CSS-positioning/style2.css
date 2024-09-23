@@ -1,0 +1,47 @@
+div {
+    border-style: dotted;
+    border-color: #7e6073;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parent {
+    background-color: #bec9b9;
+    width: 1000px;
+    height: 300px;
+    position:relative;
+    left:50%;
+    margin:50px 0 0 -500px;
+}
+
+.child1 {
+    width: 400px;
+    height: 200px;
+    background-color: #5f8c8a;
+    position: absolute;
+    top: 0px;
+}
+
+.child2 {
+    width: 400px;
+    height: 200px;
+    background-color: #a092a3;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    z-index: 2;
+    
+}
+
+.child3 {
+    width: 400px;
+    height: 200px;
+    background-color: #a8a981;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+
+}
