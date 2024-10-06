@@ -1,0 +1,81 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  border: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 20px;
+  width: 1360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+section img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.left {
+  width: 880px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tilesleft {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tilesleft .vertical {
+  background-color: rgb(163, 175, 192);
+  color: white;
+  padding: 30px;
+  margin: 10px;
+  height: 150px;
+}
+.tilesleft .tiles {
+  background-color: rgb(255, 219, 61);
+  padding: 30px;
+  margin: 10px;
+  height: 150px;
+}
+
+.middle {
+  width: 400px;
+  background-color: rgb(42, 99, 255);
+  color: white;
+  padding: 30px;
+  margin: 10px;
+}
+
+.wide {
+  width: 100%;
+  background-color: magenta;
+  padding: 30px;
+  margin: 10px;
+  height: 300px;
+}
+
+.tall {
+  width: 400px;
+  background-color: rgb(137, 199, 121);
+  color: white;
+  padding: 30px;
+  margin: 10px;
+}/*# sourceMappingURL=layout2style.css.map */
