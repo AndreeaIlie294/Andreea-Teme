@@ -1,0 +1,148 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+  body {
+    border: 0;
+    padding: 0;
+}
+
+
+.calculator {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #e6e6e6;
+    width: 450px;
+    height: 750px;
+    padding: 5px;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 25px 40px 140px 30px repeat(6,auto) ;
+
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-content: center;
+        color: grey;
+        margin-left: 10px;
+    }
+
+
+    .icons {
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+        color: grey;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 20px;
+        justify-content: end;
+        // align-items: center;
+
+        .topIcon {
+            width: 60px;
+            height: auto;
+            text-align: center;
+            align-content: center;
+        }
+
+        .topIcon:hover{
+            background-color: rgb(219, 219, 219);
+            cursor: pointer;
+    }
+    }
+
+
+
+
+    span {
+        font-size: 16px;
+    }
+
+    .standard {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-items: center;
+
+        display: flex;
+        justify-content: space-around;
+        color: grey;
+        font-size: 20px;
+        color: black;
+    }
+
+    .history {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+        span{
+            font-size: 22px;
+        }
+    }
+
+    .result {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        align-content: center;
+        p {
+            font-size: 60px;
+            margin: 0;
+            text-align: end;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+    }
+
+    .memory {
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+        display: grid;
+        grid-template-columns: repeat(6,16%);
+        grid-template-rows: auto;
+        justify-content: space-around;
+        text-align: center;
+        align-content: center;
+
+
+        .inactive {
+            color: grey;
+        }
+        .active:hover{
+            background-color: rgb(219, 219, 219);
+            cursor: pointer;
+        }
+    }
+    
+
+    .grid-item{
+        background-color: #f0f0f0;
+        text-align: center;
+        align-content: center;
+    }
+
+    .number {
+        background-color: #fafafa;
+        font-weight: 700;
+    }
+
+
+    .equal {
+        background-color: cyan;
+    }
+
+    .grid-item:hover{
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+}
