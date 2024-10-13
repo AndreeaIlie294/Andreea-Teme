@@ -1,0 +1,113 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.menu{
+    height: 800px;
+    width: 800px;
+    margin: 20px;
+    background-color: #2b2c2d;
+
+    display: grid;
+    grid-template-columns: 60px 320px auto;
+}
+
+.left{
+    height: 780px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    display: grid;
+    grid-template-rows:500px repeat(4,auto) ;
+    justify-content: space-between;
+
+    .user{
+        height: 25px;
+        background-color: grey;
+        border-radius: 50%;
+    }
+}
+
+.middle{
+
+    color: white;
+    padding-left: 15px;
+
+    img{
+        height: 25px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons{
+        width: 40px;
+        height: 40px;
+        background-color: #3376d0;
+        align-content: center;
+    }
+
+    .element{
+        display: grid;
+        grid-template-columns: 55px auto;
+        align-items: center;
+        margin-top: 5px;
+
+    }
+
+    p{
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+}
+
+.right{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+
+
+    .appClass{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .appElement{
+        width: 125px;
+        height: 125px;
+        background-color: #3376d0;
+
+        img{
+            height: 45px;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+        }
+
+        p{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+    }
+
+    .office{
+        background-color: rgb(73, 73, 73);
+    }
+
+    .space{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 30px;
+    }
+
+}

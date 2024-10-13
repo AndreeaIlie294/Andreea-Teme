@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PizzaOrder</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     
+    <form action="https://google.com" method="get">
+
+        <fieldset>
+            <legend>Pizza Order</legend>
+
+
+
+            <label for="name">Your name:</label>
+            <input type="text" id ="name" name="name" required minlength="3" maxlength="10" placeholder="name..."/>
+
+            <br/><br/>
+
+            <label for="email">Your email:</label>
+            <input type="email" id ="email" name="email" required placeholder="email..."/>
+
+            <br/><br/>
+
+            Topping:
+            <input type="radio" id="supreme" value="Supreme" name="topping" checked/>
+            <label for="supreme">Supreme</label>
+
+            <input type="radio" id="vegetarian" value="Vegetarian" name="topping"/>
+            <label for="vegetarian">Vegetarian</label>
+
+            <input type="radio" id="hawaian" value="Hawaian" name="topping"/>
+            <label for="hawaian">Hawaian</label>
+
+            <br/><br/>
+
+            <label for="selection">Sauce:</label>
+            <select id="selection">
+                <option value="Tomato">Tomato</option>
+                <option selected value="Spicy">Spicy</option>
+                <option value="BBQ">BBQ</option>
+            </select>
+
+            <br/><br/>
+
+            Extras:
+            <input  type="checkbox" id="cheese" value="Cheese" name="extras"/>
+            <label for="cheese">Cheese</label>
+
+            <input  type="checkbox" id="onions" value="Onions" name="extras"/>
+            <label for="onions">Onions</label>
+
+            <input  type="checkbox" id="olives" value="Olives" name="extras" checked/>
+            <label for="olives">Olives</label>
+
+            <br/><br/>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id ="quantity" name="quantity" min="1" value="1"/>
+
+            <br/><br/>
+
+            <label for="quantitydate">Delivery date:</label>
+            <input type="date" name="quantitydate" id="quantitydate" />
+
+            <br/><br/>
+            
+            <label for="delivery">Delivery instructions:</label>    
+            <br/>
+            <textarea name="delivery" id="delivery" rows="5" cols="70"></textarea> 
+
+            <br/><br/>
+
+            <input type="submit" value="Send Order">
+
+
+    </fieldset>
+
+</form>
+
 </body>
 </html>
+
